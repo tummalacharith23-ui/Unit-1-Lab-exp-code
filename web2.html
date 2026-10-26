@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ElectroStore</title>
+    <link rel="stylesheet" href="web2.css">
+</head>
+<body>
+
+<header>
+    <h1>ElectroStore</h1>
+    <p>Best Electronics at Best Prices!</p>
+    <button onclick="alert('Cart: ' + cart + ' items')">
+        Cart (<span id="count">0</span>)
+    </button>
+</header>
+
+<section class="products">
+    <div class="card">
+        <img src="iPhone-16-photos-13.png.avif">
+        <h3>iphone 16 </h3>
+        <p>Price: ₹69999</p>
+        <button onclick="addCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300" alt="Smartphone">
+        <h3>Smartphone</h3>
+        <p>Price: ₹14,999</p>
+        <button onclick="addCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300" alt="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p>Price: ₹2,499</p>
+        <button onclick="addCart()">Add to Cart</button>
+    </div>
+</section>
+
+<footer>
+    <p>Contact: electronics@example.com</p>
+    <p>© 2026 ElectroStore</p>
+</footer>
+
+<script>
+let cart = 0;
+
+function addCart() {
+    cart++;
+    document.getElementById("count").innerText = cart;
+}
+</script>
+
+</body>
+</html>

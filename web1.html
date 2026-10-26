@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="web1.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <button onclick="alert('Cart: ' + cart + ' items')">
+                Cart (<span id="count">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Big Sale - 50% OFF!</h2>
+        <p>Shop your favorite products today.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>₹999 | ⭐ 4.5</p>
+                <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300" alt="Shoes">
+                <h3>Shoes</h3>
+                <p>₹1499 | ⭐ 4.3</p>
+                <button onclick="addCart()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">Contact: shop@example.com</footer>
+
+    <script>
+        let cart = 0;
+        function addCart() {
+            cart++;
+            document.getElementById("count").textContent = cart;
+        }
+    </script>
+</body>
+</html>
+ 

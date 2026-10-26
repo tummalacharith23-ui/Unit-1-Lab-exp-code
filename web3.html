@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online News Portal</title>
+    <link rel="stylesheet" href="web3.css">
+</head>
+<body>
+
+<header>
+    <h1>Daily News</h1>
+    <p>Your News, Your World</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#national">National</a>
+    <a href="#sports">Sports</a>
+    <a href="#technology">Technology</a>
+</nav>
+
+<section class="news">
+    <h2>Latest News</h2>
+
+    <div class="card" id="national">
+        <h3>National News</h3>
+        <p>Latest updates from across the country.</p>
+        <button onclick="readMore('National news updates')">
+            Read More
+        </button>
+    </div>
+
+    <div class="card" id="sports">
+        <h3>Sports News</h3>
+        <p>Get the latest cricket and sports updates.</p>
+        <button onclick="readMore('Sports news updates')">
+            Read More
+        </button>
+    </div>
+
+    <div class="card" id="technology">
+        <h3>Technology News</h3>
+        <p>Discover new gadgets and technology trends.</p>
+        <button onclick="readMore('Technology news updates')">
+            Read More
+        </button>
+    </div>
+</section>
+
+<footer>
+    <p>Contact: news@example.com</p>
+    <p>© 2026 Daily News</p>
+</footer>
+
+<script>
+function readMore(message) {
+    alert(message);
+}
+</script>
+
+</body>
+</html>
